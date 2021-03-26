@@ -1,10 +1,6 @@
 #almostthereContainer {
   z-index: 820;
-  background-color: #101118;
-}
-
-.xrextras-old-style #almostthereContainer {
-  background-color: #FFFFFF;
+  background-color: #161C24;
 }
 
 #qrcode {
@@ -95,11 +91,7 @@
 }
 
 #error_msg_open_in_safari {
-  background-color: #101118;
-}
-
-.xrextras-old-style #error_msg_open_in_safari {
-  background-color: white;
+  background-color: #161C24;
 }
 
 .open-header-top {
@@ -113,10 +105,6 @@
   transform: translateX(-50%);
 }
 
-.xrextras-old-style .open-header-top {
-  color: #323232;
-}
-
 .open-header-bottom {
   font-family: 'Nunito-SemiBold', sans-serif;
   color: white;
@@ -126,10 +114,6 @@
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.xrextras-old-style .open-header-bottom {
-  color: #323232;
 }
 
 .open-header-unknown {
@@ -143,10 +127,6 @@
   transform: translateX(-50%);
 }
 
-.xrextras-old-style .open-header-unknown {
-  color: #323232;
-}
-
 .desktop-message {
   font-family: 'Nunito-SemiBold', sans-serif;
   margin: 0 auto;
@@ -157,10 +137,6 @@
   line-height: 1em;
 }
 
-.xrextras-old-style .desktop-message {
-  color: #323232;
-}
-
 .desktop-hint {
   font-family: 'Nunito', sans-serif;
   font-size: 14pt;
@@ -168,10 +144,6 @@
   line-height: 2em;
   margin-top: 2vh;
   letter-spacing: .37;
-}
-
-.xrextras-old-style .desktop-hint {
-  color: #323232;
 }
 
 .copy-link-btn {
@@ -186,17 +158,13 @@
   color: white;
   text-decoration: none;
   border: none;
-  background-color: #AD50FF;
+  background-color: #3F51B5;
   padding: 6px 13px;
   border-radius: 10px;
 }
 
-.xrextras-old-style .copy-link-btn {
-  background-color: #7611B7;
-}
-
 .error-copy-link-copied {
-  background-color: #8083A2 !important;
+  background-color: #76859E !important;
 }
 
 .safari-hero-image {

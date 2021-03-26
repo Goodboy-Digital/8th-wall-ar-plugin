@@ -5,15 +5,11 @@
 
 #loadBackground {
   z-index: 10;
-  background-color: #101118;
+  background-color: #161C24;
   pointer-events: auto;
 }
 
-.xrextras-old-style #loadBackground {
-  background-color: white;
-}
-
-#requestingCameraPermissions {
+/* #requestingCameraPermissions {
   z-index: 11;
   position: absolute;
   top: 0;
@@ -25,7 +21,7 @@
   background-color: #464766;
   padding-top: 3vh;
   padding-bottom: 1.75vh;
-}
+} */
 
 #requestingCameraIcon {
   display: block;
@@ -47,11 +43,7 @@
 
 /* camera and micrphone permission related styles */
 #cameraPermissionsErrorApple, #microphonePermissionsErrorApple {
-  background-color: #101118;
-}
-
-.xrextras-old-style #cameraPermissionsErrorApple, .xrextras-old-style #microphonePermissionsErrorApple {
-  background-color: white;
+  background-color: #161C24;
 }
 
 #cameraPermissionsErrorAppleMessage, #microphonePermissionsErrorAppleMessage {
@@ -62,10 +54,6 @@
   margin-left: auto;
   margin-right: auto;
   color: white;
-}
-
-.xrextras-old-style #cameraPermissionsErrorAppleMessage, .xrextras-old-style #microphonePermissionsErrorAppleMessage {
-  color: #323232;
 }
 
 .permissionIconIos {
@@ -97,11 +85,7 @@
   pointer-events: auto;
   justify-content: space-around;
   align-items: center;
-  background-color: #101118;
-}
-
-.xrextras-old-style #cameraPermissionsErrorAndroid, .xrextras-old-style #microphonePermissionsErrorAndroid {
-  background-color: white;
+  background-color: #161C24;
 }
 
 /* device motion permission related styles */
@@ -113,33 +97,19 @@
   pointer-events: auto;
   justify-content: space-around;
   align-items: center;
-  background-color: #101118;
+  background-color: #161C24;
   color: white;
 }
 
-.xrextras-old-style #deviceMotionErrorApple {
-  color: #2D2E43;
-  background-color: white;
-}
-
 #linkOutViewAndroid, #copyLinkViewAndroid {
-  background-color: #101118;
-}
-
-.xrextras-old-style #linkOutViewAndroid, .xrextras-old-style #copyLinkViewAndroid {
-  background-color: #fff;
+  background-color: #161C24;
 }
 
 .permission-error {
   padding: 3vh 5vh;
   font-size: 3.5vh;
   color: #fff;
-  background-color: #101118;
-}
-
-.xrextras-old-style .permission-error {
-  color: #323232;
-  background-color: white;
+  background-color: #161C24;
 }
 
 .permission-error>h1 {
@@ -149,17 +119,13 @@
 .main-button {
   border: none;
   outline: none;
-  background-color: #AD50FF;
+  background-color: #3F51B5;
   color: white;
   font-size: 2.5vh;
   display: block;
   margin-top: 2em;
   padding: 0.5em 1em;
   border-radius: 0.5em;
-}
-
-.xrextras-old-style .main-button {
-  background-color: #7611B7;
 }
 
 .start-ar-button {
@@ -174,13 +140,9 @@
   color: white;
   text-decoration: none;
   border: none;
-  background-color: #AD50FF;
+  background-color: #3F51B5;
   padding: 6px 13px;
   border-radius: 10px;
-}
-
-.xrextras-old-style .start-ar-button {
-  background-color: #7611b7;
 }
 
 .permissionIcon {
@@ -213,10 +175,6 @@
   color: white;
 }
 
-.xrextras-old-style .loading-error-header {
-  color: #323232;
-}
-
 .loading-error-footer {
   font-size: 3vh;
   line-height: 5.5vh;
@@ -224,10 +182,6 @@
   text-align: center;
   width: 80vmin;
   color: white;
-}
-
-.xrextras-old-style .loading-error-footer {
-  color: #323232;
 }
 
 .loading-error-footer img {
@@ -245,10 +199,6 @@
   margin-left: 1em;
   counter-reset: line;
   flex: 0 0 auto;
-}
-
-.xrextras-old-style .loading-error-instructions {
-  color: #2D2E43;
 }
 
 .loading-error-instructions>li {
@@ -279,52 +229,40 @@
   content: counter(line);
 }
 
-.xrextras-old-style .loading-error-instructions>li:before {
-  background-color: rgba(218, 209, 228, 128);
-}
-
 .highlight {
   color: white;
   font-family: 'Nunito-SemiBold', sans-serif;
   font-weight: 800;
 }
 
-.xrextras-old-style .highlight {
-  color: #7611B7;
-}
-
 .camera-instruction-block {
   display: inline-block;
-  background-color: #8083A2;
+  background-color: #76859E;
   padding: 1vh;
-}
-
-.xrextras-old-style .camera-instruction-block {
-  background-color: #EBEBEB;
 }
 
 .camera-instruction-button {
   display: inline-block;
   padding: 1vh;
-  background-color: #359AFF;
+  background-color: #2196F3;
   color: white;
   font-size: 2vh;
   box-shadow: 0 .125vh .25vh rgba(0, 0, 0, 0.5);
 }
 
 body:not(.xrextras-old-style) .prompt-box-8w {
-  background-color: #3A3B55;
+  background-color: #353F50;
   color: #fff;
   text-align: center;
 }
 
 body:not(.xrextras-old-style) .prompt-button-8w {
-  background-color: #8083A2;
+  background-color: #76859E;
   border-radius: 10px;
 }
 
 body:not(.xrextras-old-style) .button-primary-8w {
-  background-color: #AD50FF;
+  background-color: #3F51B5;
 }
 
 .fade-out {

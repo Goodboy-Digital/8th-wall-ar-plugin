@@ -18,7 +18,7 @@ function create() {
   let rootNode_ = null
   let loadBackground_
   let loadImageContainer_
-  let camPermissionsRequest_
+  // let camPermissionsRequest_
   let camPermissionsFailedAndroid_
   let camPermissionsFailedApple_
   let micPermissionsFailedAndroid_
@@ -64,7 +64,7 @@ function create() {
     rootNode_ = rootNode
     loadBackground_ = rootNode_.querySelector('#loadBackground')
     loadImageContainer_ = rootNode_.querySelector('#loadImageContainer')
-    camPermissionsRequest_ = document.getElementById('requestingCameraPermissions')
+    // camPermissionsRequest_ = document.getElementById('requestingCameraPermissions')
     camPermissionsFailedAndroid_ = document.getElementById('cameraPermissionsErrorAndroid')
     camPermissionsFailedApple_ = document.getElementById('cameraPermissionsErrorApple')
     micPermissionsFailedAndroid_ = document.getElementById('microphonePermissionsErrorAndroid')
@@ -93,13 +93,13 @@ function create() {
     }, 400)
   }
 
-  const showCameraPermissionsPrompt = () => {
-    camPermissionsRequest_.classList.remove('hidden')
-  }
+  // const showCameraPermissionsPrompt = () => {
+  //   camPermissionsRequest_.classList.remove('hidden')
+  // }
 
-  const dismissCameraPermissionsPrompt = () => {
-    camPermissionsRequest_.classList.add('fade-out')
-  }
+  // const dismissCameraPermissionsPrompt = () => {
+  //   camPermissionsRequest_.classList.add('fade-out')
+  // }
 
   const promptUserToChangeBrowserSettingsMicrophone = () => {
     // We only really handle Android variants (Samsung/Chrome browsers)
@@ -156,7 +156,7 @@ function create() {
   }
 
   const promptUserToChangeBrowserSettings = (reason) => {
-    camPermissionsRequest_.classList.add('hidden')
+    // camPermissionsRequest_.classList.add('hidden')
     if (reason === 'NO_MICROPHONE' || reason === 'DENY_MICROPHONE') {
       promptUserToChangeBrowserSettingsMicrophone()
     } else {
@@ -169,7 +169,7 @@ function create() {
   }
 
   const displayAndroidLinkOutView = () => {
-    camPermissionsRequest_.classList.add('hidden')
+    // camPermissionsRequest_.classList.add('hidden')
 
     const ogTag = document.querySelector('meta[name="og:image"]')
     const headerImgSrc = ogTag && ogTag.content
@@ -194,7 +194,7 @@ function create() {
   }
 
   const displayCopyLinkView = () => {
-    camPermissionsRequest_.classList.add('hidden')
+    // camPermissionsRequest_.classList.add('hidden')
 
     const ogTag = document.querySelector('meta[name="og:image"]')
     const headerImgSrc = ogTag && ogTag.content
@@ -348,14 +348,14 @@ function create() {
           }, 3000)
         }
         showLoading()
-        if (!previouslyGotCameraPermission) {
-          showCameraPermissionsPrompt()
-        }
+        // if (!previouslyGotCameraPermission) {
+        //   showCameraPermissionsPrompt()
+        // }
       } else if (status === 'hasStream') {
         clearTimeout(cancelCameraTimeout)
-        if (!previouslyGotCameraPermission) {
-          dismissCameraPermissionsPrompt()
-        }
+        // if (!previouslyGotCameraPermission) {
+        //   dismissCameraPermissionsPrompt()
+        // }
       } else if (status === 'hasVideo') {
         // wait a few frames for UI to update before dropping load screen.
       } else if (status === 'failed') {
@@ -431,7 +431,7 @@ function create() {
         }
       }
 
-      dismissCameraPermissionsPrompt()
+      // dismissCameraPermissionsPrompt()
       hideLoadingScreenNow()
     },
   })
